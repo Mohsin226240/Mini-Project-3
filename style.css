@@ -329,6 +329,8 @@ header {
 }
 
 .form-group {
+    display: flex;
+    margin-top: 20px; /* This adds space above the form group */
     margin-bottom: 20px;
 }
 
@@ -339,12 +341,14 @@ header {
 }
 
 .form-control {
-    width: 100%;
+    flex: 1;
     padding: 12px 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
     transition: var(--transition);
+    margin-top: 10px; /* This adds 10px of space to the right of the form field */
+    margin-bottom: 20px; /* This adds 10px of space to the right of the form field */
 }
 
 .form-control:focus {
@@ -564,4 +568,5 @@ footer {
     .footer-container {
         grid-template-columns: 1fr;
     }
+
 }
